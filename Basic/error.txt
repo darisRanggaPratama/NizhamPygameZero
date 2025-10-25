@@ -1,0 +1,25 @@
+PS D:\GitHubDesktop\NizhamPygameZero\Basic> pgzrun main.py
+pygame 2.6.1 (SDL 2.28.4, Python 3.13.9)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\M.Nizham 2\AppData\Local\Programs\Python\Python313\Scripts\pgzrun.exe\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\M.Nizham 2\AppData\Local\Programs\Python\Python313\Lib\site-packages\pgzero\runner.py", line 93, in main
+    run_mod(mod)
+    ~~~~~~~^^^^^
+  File "C:\Users\M.Nizham 2\AppData\Local\Programs\Python\Python313\Lib\site-packages\pgzero\runner.py", line 113, in run_mod
+    PGZeroGame(mod).run()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\M.Nizham 2\AppData\Local\Programs\Python\Python313\Lib\site-packages\pgzero\game.py", line 217, in run
+    self.mainloop()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\M.Nizham 2\AppData\Local\Programs\Python\Python313\Lib\site-packages\pgzero\game.py", line 256, in mainloop
+    draw()
+    ~~~~^^
+  File "main.py", line 158, in draw
+    screen.draw.polygon(points, (100, 200, 255))
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SurfacePainter' object has no attribute 'polygon'
